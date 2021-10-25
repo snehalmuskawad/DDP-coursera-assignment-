@@ -1,0 +1,22 @@
+---
+title: "My_First_Project"
+author: "Sanya Kapur"
+date: "10/25/2021"
+output: html_document
+---
+
+{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+
+## My first Leaflet
+
+My first leaflet which will be available on GitHub Pages
+
+{r cars}
+library(leaflet)
+current_map <- leaflet() %>%
+  addTiles() %>%
+addMarkers(lat=13.356338, lng=74.796184, popup = "Current Address")
+
+current_map
